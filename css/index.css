@@ -1,0 +1,39 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.header-dropdown {
+  background-color: #fff !important;
+  color: black;
+  border: none;
+}
+.header-dropdown:hover {
+  color: black;
+}
+.header-dropdown:active {
+  color: black;
+}
+
+.dropdown-menu {
+  border-color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.header-rows,
+.nav-list,
+.header-row-navigation-yaka-fignya {
+  display: flex;
+}
+
+.header-row-navigation-yaka-fignya {
+  justify-content: space-between;
+}
+
+.nav-list {
+  justify-content: space-around;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
