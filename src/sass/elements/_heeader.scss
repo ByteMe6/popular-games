@@ -30,3 +30,54 @@ li {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.toggle {
+    width: 50px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle.active {
+    background-color: grey;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: transform 0.3s;
+}
+
+.circle.active {
+    transform: translateX(20px);
+    background-color: white;
+}
+.second-header-row{
+  display: flex;
+}
+header{
+  width:100%
+}
+.nav-list-item:nth-child(2){
+  width:150px
+}
+.header-row{
+  width: 50%;
+}
+header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:0 175px;
+}
+.group-toggle{
+  display: flex;
+  align-items: center;
+}

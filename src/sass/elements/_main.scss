@@ -1,0 +1,26 @@
+main{
+    background-color: rgb(255, 0, 0);
+    background-image: url("../img/main-bg.png");
+}
+.main-title{
+    color: rgb(0, 0, 0);
+        font-family: Montserrat Alternates;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0%;
+}
+.body-main{
+    margin: 0 175px 0 175px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.line-section{
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    width: 536px;
+    border-radius: 5px;
+    margin: 0 auto;
+}

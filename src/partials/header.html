@@ -1,34 +1,43 @@
-<header>
-  <ul class="header-rows">
-    <li class="header-row header-row-navigation-yaka-fignya">
-      <img class src="./img/logo.png" alt="</>" />
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <div class="dropdown-center">
-              <button
-                class="btn btn-secondary dropdown-toggle header-dropdown"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Інтерактив
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Числовий</a></li>
-                <li><a class="dropdown-item" href="#">Ігровий</a></li>
-                <li><a class="dropdown-item" href="#">Ознайомчий</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-list-item">Наша команда</li>
-          <li class="nav-list-item">Контакти</li>
-        </ul>
-      </nav>
 
-      <li class="header-row">
-        
+  <img class src="./img/logo.png" alt="</>" />
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <div class="dropdown-center">
+          <button
+            class="btn btn-secondary dropdown-toggle header-dropdown"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Інтерактив
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Числовий</a></li>
+            <li><a class="dropdown-item" href="#">Ігровий</a></li>
+            <li><a class="dropdown-item" href="#">Ознайомчий</a></li>
+          </ul>
+        </div>
       </li>
-    </li>
-  </ul>
-</header>
+      <li class="nav-list-item">Наша команда</li>
+      <li class="nav-list-item">Контакти</li>
+    </ul>
+  </nav>
+  <div class="group-toggle">
+    <div class="toggle">
+    <div class="circle"></div>
+  </div>
+
+  <script>
+    const toggles = document.querySelectorAll('.toggle');
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        toggle.querySelector('.circle').classList.toggle('active');
+      });
+    });
+  </script>
+  <p class="hello">Вітаю, <span id="nameUser">лох</span></p>
+
+  </div>
