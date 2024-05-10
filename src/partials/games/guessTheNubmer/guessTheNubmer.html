@@ -1,0 +1,30 @@
+<h3 class="yearOfBornTitle guessNumberTitle">Вгадай число, яке загадав комп'ютер</h3>
+<br />
+<div class="yearOfBornAnswerBox guessNumberBox">
+  <div class="input-group mb-3 yearOfBornInputBox guessNumberInputBox">
+    <input type="text" class="form-control yearOfBornInput guessNumberInput" placeholder="Введіть число" aria-label="Recipient's username" aria-describedby="button-addon2" />
+    <button class="btn btn-dark yearOfBornInputBtn guessNumberBtn" type="button" id="button-addon2" onclick="checkNumber()">
+      <img src="./partials/games/lupa.png" alt="" />
+    </button>
+  </div>
+  <div class="YearOfBornAnswer guessNumberAnswer">
+    <p class="YearOfBornAnswerText guessNumberText text-body-success">Чекаю запросу. Біп буп🤖</p>
+  </div>
+</div>
+<script>
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  console.log('Загадане число: ' + randomNumber);
+
+  let guessNumberText = document.querySelector('.guessNumberText');
+  let guessNumberInput = document.querySelector('.guessNumberInput');
+
+  function checkNumber() {
+    const userNumber = parseInt(guessNumberInput.value);
+
+    if (userNumber === randomNumber) {
+      guessNumberText.textContent = 'Вітаю, ви вгадали число!';
+    } else {
+      guessNumberText.textContent = 'Нє, неправильно';
+    }
+  }
+</script>
