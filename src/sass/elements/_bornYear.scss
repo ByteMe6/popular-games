@@ -1,0 +1,54 @@
+.yearOfBornTitle {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.yearOfBornInputBox {
+  position: relative;
+  width: 315px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 15px 10px 0px;
+}
+.yearOfBornInputBtn {
+  /* Frame 105 */
+  position: relative;
+  width: 35px;
+  height: 35px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 7px;
+  border-radius: 0px 20px 20px 0px;
+  background: rgb(0, 0, 0);
+}
+.yearOfBornInput {
+  /* Frame 5 */
+  position: relative;
+  width: 215px;
+  height: 35px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  background: rgb(215, 215, 215);
+}
+.text-body-success{
+    color: rgb(3, 153, 0);
+}
+.yearOfBornAnswerBox{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .header-dropdown {
   background-color: #fff !important;
   color: black;
@@ -94,4 +95,94 @@ header {
 .group-toggle {
   display: flex;
   align-items: center;
+}
+
+main {
+  background-color: rgb(255, 0, 0);
+  background-image: url("../img/main-bg.png");
+}
+
+.main-title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+
+.body-main {
+  margin: 0 175px 0 175px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.line-section {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  border: 3px solid rgb(0, 0, 0);
+  width: 536px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.yearOfBornTitle {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.yearOfBornInputBox {
+  position: relative;
+  width: 315px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 15px 10px 0px;
+}
+
+.yearOfBornInputBtn {
+  /* Frame 105 */
+  position: relative;
+  width: 35px;
+  height: 35px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 7px;
+  border-radius: 0px 20px 20px 0px;
+  background: rgb(0, 0, 0);
+}
+
+.yearOfBornInput {
+  /* Frame 5 */
+  position: relative;
+  width: 215px;
+  height: 35px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  background: rgb(215, 215, 215);
+}
+
+.text-body-success {
+  color: rgb(3, 153, 0);
+}
+
+.yearOfBornAnswerBox {
+  display: flex;
+  justify-content: space-around;
 }
