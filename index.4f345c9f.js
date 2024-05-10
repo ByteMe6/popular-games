@@ -1,0 +1,2 @@
+var yearOfBornAnswerText=document.querySelector(".YearOfBornAnswerText"),yearOfBornBtn=document.querySelector(".yearOfBornInputBtn"),yearOfBornInp=document.querySelector(".yearOfBornInput");function yearCheck(e){Number.isInteger(e)&&e%4==0?yearOfBornAnswerText.textContent="Ви народилися в високосний рік!":yearOfBornAnswerText.textContent="Ви не народилися в високосний рік =( 🥲"}yearOfBornBtn.addEventListener("click",(function(){yearCheck(parseInt(yearOfBornInp.value))}));
+//# sourceMappingURL=index.4f345c9f.js.map
