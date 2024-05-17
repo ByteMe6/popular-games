@@ -1,12 +1,63 @@
 <h3 class="knptitle">Камінь - ножиці - папір</h3>
-
 <div class="containerKnp">
-    <div class="knpBtns">
-        <button type="button" class="btn btn-dark knpBtn" id="knpBtn3"><img src="./partials/games/knp/img/stone.png" alt=""></button>
-
-        <button type="button" class="btn btn-dark knpBtn" id="knpbtn2"><img src="./partials/games/knp/img/scissors.png" alt=""></button>
-
-        <button type="button" class="btn btn-dark knpBtn" id="knpBtn"><img src="./partials/games/knp/img/paper.png" alt=""></button>
-
-    </div>
+  <div class="knpBtns">
+    <button type="button" class="btn btn-dark knpBtn" id="knpBtn3"><img src="./partials/games/knp/img/stone.png" alt=""></button>
+    <button type="button" class="btn btn-dark knpBtn" id="knpbtn2"><img src="./partials/games/knp/img/scissors.png" alt=""></button>
+    <button type="button" class="btn btn-dark knpBtn" id="knpBtn"><img src="./partials/games/knp/img/paper.png" alt=""></button>
+  </div>
+  <p class="text-body-success" id="resultText">Зробіть свій вибір</p>
+  <button type="button" class="btn btn-dark" style="border-radius: 30px;" id="computerChoice">Компутер вибрав:</button>
 </div>
+
+<script>
+  // Получаем ссылки на кнопки
+  const stoneBtn = document.getElementById('knpBtn3');
+  const scissorsBtn = document.getElementById('knpbtn2');
+  const paperBtn = document.getElementById('knpBtn');
+  const resultText = document.getElementById('resultText');
+  const computerChoiceBtn = document.getElementById('computerChoice');
+
+  // Функция для получения случайного выбора компьютера
+  function getComputerChoice() {
+    const choices = ['stone', 'scissors', 'paper'];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+  }
+
+  // Функция для определения победителя
+  function getWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+      return 'Ничья';
+    } else if (
+      (playerChoice === 'stone' && computerChoice === 'scissors') ||
+      (playerChoice === 'scissors' && computerChoice === 'paper') ||
+      (playerChoice === 'paper' && computerChoice === 'stone')
+    ) {
+      return 'Вы выиграли!';
+    } else {
+      return 'Компьютер выиграл!';
+    }
+  }
+
+  // Обработчики событий для кнопок
+  stoneBtn.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const winner = getWinner('stone', computerChoice);
+    resultText.textContent = winner;
+    computerChoiceBtn.textContent = `Компутер вибрав: ${computerChoice}`;
+  });
+
+  scissorsBtn.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const winner = getWinner('scissors', computerChoice);
+    resultText.textContent = winner;
+    computerChoiceBtn.textContent = `Компутер вибрав: ${computerChoice}`;
+  });
+
+  paperBtn.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const winner = getWinner('paper', computerChoice);
+    resultText.textContent = winner;
+    computerChoiceBtn.textContent = `Компутер вибрав: ${computerChoice}`;
+  });
+</script>

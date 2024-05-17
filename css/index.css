@@ -8,6 +8,32 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+  text-align: center;
+}
+
+.containerKnp {
+  text-align: center;
+}
+
+.knpBtns {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.knpBtn {
+  /* Frame 127 */
+  width: 60px;
+  height: 60px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .header-dropdown {
