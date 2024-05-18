@@ -5,11 +5,31 @@ h3 {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
 }
-.calc-inp{
-    border-radius: 20px;
-    
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        background: rgb(215, 215, 215);
+.calc-inp {
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(215, 215, 215);
+  border: 0;
+  padding: 10px 20px;
+  height: 30px;
+}
+.calc-btn {
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 0;
+  padding: 5px 10px;
+}
+.calc-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.calc-body {
+  display: flex;
+  align-items: center;
 }
