@@ -245,7 +245,7 @@ h3 {
 .calc-btn {
   border-radius: 20px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(0, 0, 0);
+  background: rgb(255, 0, 0);
   color: white;
   border: 0;
   padding: 5px 10px;
@@ -261,4 +261,9 @@ h3 {
 .calc-body {
   display: flex;
   align-items: center;
+}
+
+.calc-align-center {
+  align-items: center;
+  justify-content: center;
 }
