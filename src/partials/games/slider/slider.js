@@ -1,20 +1,18 @@
-const prevBtn = document.querySelector('.sliderBtnPrev');
-const nextBtn = document.querySelector('.sliderBtnNext');
-const sliderImg = document.querySelectorAll('.sliderImg');
-let masterSlide = 0;
-const sliderImgWidth = document.querySelector('.slide').offsetWidth;
-const sliderImgBox = document.querySelector(".sliderImgBox");
+const slider = document.querySelector(".slider");
+const sliderItems = document.querySelector(".slider-items");
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-console.log("width:" + sliderImgWidth + "px");
+let currentSlide = 0;
+const slideWidth = slides[0].offsetWidth;
 
-prevBtn.addEventListener('click', () => {
-    masterSlide = (masterSlide === 0) ? sliderImg.length - 1 : masterSlide - 1;
-    sliderImgBox.style.transform = `translateX(-${masterSlide * sliderImgWidth}px)`;
-    console.log(masterSlide);
+prevBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  sliderItems.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 });
 
-nextBtn.addEventListener('click', () => {
-    masterSlide = (masterSlide === sliderImg.length - 1) ? 0 : masterSlide + 1;
-    sliderImgBox.style.transform = `translateX(-${masterSlide * sliderImgWidth}px)`;
-    console.log(masterSlide);
+nextBtn.addEventListener("click", () => {
+  currentSlide = (currentSlide + 1 + slides.length) % slides.length;
+  sliderItems.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 });
