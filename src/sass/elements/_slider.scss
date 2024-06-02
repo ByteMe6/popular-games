@@ -1,19 +1,47 @@
-.team-img{
-    border-radius: 30px;
-    width: 70px;
+.team-img {
+  border-radius: 30px;
+  width: 70px;
 }
-.slider-team-list{
-    background-color: rgb(255, 255, 255);
+.slider-team-list {
+  background-color: rgb(255, 255, 255);
 }
-.team-arrow-rotate{
-    transform: rotate(180deg);
+.team-arrow-rotate {
+  transform: rotate(180deg);
 }
-.slider-team-list{
-    display: flex;
-    align-items: center;
-    padding: 0;
-    justify-content: space-evenly;
+.slider-team-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-evenly;
 }
-.team-img-me{
-    border-radius: 30px;
+.team-img-me {
+  border-radius: 30px;
+}
+.sliderUserName {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+.sliderUserText {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+.sliderBtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+.sliderBtnNext {
+  transform: rotate(180deg);
+}
+.sliderImgImg{
+
+    height: 350px;
 }

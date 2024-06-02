@@ -1,27 +1,53 @@
 <h3>Наша Команда</h3>
 <div class="slider-team">
   <ul class="slider-team-list">
-        <li class="slider-team-item">
-      <img
-        class="team-img"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVeOlPB0v7o4U3jMSn01eO6mb-hdeDtc1rQ&s"
-        alt=""
-      />
+    <li class="slider-team-item">
+      <button class="sliderBtn sliderBtnPrev">
+        <img
+          class="team-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVeOlPB0v7o4U3jMSn01eO6mb-hdeDtc1rQ&s"
+          alt="<"
+        />
+      </button>
     </li>
+
     <li class="slider-team-item team-arrow">
-      <img
-        class="team-img-me"
-        src="https://byteme6.github.io/resume-yura/img.png"
-        alt=""
-      />
-      <p>Зробив все тут, зі мною ніхто не хотів нічого робити =(</p>
+      <div class="sliderImg">
+        <img
+          class="team-img-me sliderImgImg"
+          src="https://byteme6.github.io/resume-yura/img.png"
+          alt=""
+        />
+        <div class="sliderTextBox">
+          <h4 class="sliderUserName">ByteMe6</h4>
+          <p class="sliderUserText">Зробив цей сайт</p>
+        </div>
+      </div>
+
+      <div class="sliderImgSecond">
+        <img
+          class="team-img-me sliderImgImg"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png"
+          alt=""
+        />
+        <div class="sliderTextBox">
+           <a href="https://claude.ai/"> <h4 class="sliderUserName">claude.ai</h4></a>
+          <p class="sliderUserText">Штучний інтелект, який мені допомагав (всім рекомендую)</p>
+        </div>
+      </div>
     </li>
-        <li class="slider-team-item">
-      <img
-        class="team-img team-arrow-rotate team-arrow"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVeOlPB0v7o4U3jMSn01eO6mb-hdeDtc1rQ&s"
-        alt=""
-      />
+
+    <li class="slider-team-item">
+      <button class="sliderBtn sliderBtnNext">
+        <img
+          class="team-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVeOlPB0v7o4U3jMSn01eO6mb-hdeDtc1rQ&s"
+          alt=">"
+        />
+      </button>
     </li>
   </ul>
 </div>
+
+<!-- JavaScript -->
+<script src="./partials/games/slider/slider.js"></script>
