@@ -15,12 +15,14 @@
     if (isNaN(NumsNum1) || isNaN(NumsNum2) || isNaN(NumsNum3)) {
       NumsAnswer.textContent = "Введите числа во все поля";
     } else {
-      if (NumsNum1 >= NumsNum2 && NumsNum1 >= NumsNum3) {
+      if (NumsNum1 > NumsNum2 && NumsNum1 > NumsNum3) {
         NumsAnswer.textContent = "Перше число найбільше";
-      } else if (NumsNum2 >= NumsNum1 && NumsNum2 >= NumsNum3) {
+      } else if (NumsNum2 > NumsNum1 && NumsNum2 > NumsNum3) {
         NumsAnswer.textContent = "Друге число найбільше";
-      } else {
+      } else if (NumsNum3 > NumsNum1 && NumsNum3 > NumsNum2) {
         NumsAnswer.textContent = "Третє число найбільше";
+      }else {
+        NumsAnswer.textContent = "Числа рівні";
       }
     }
   }
