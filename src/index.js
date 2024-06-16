@@ -1,5 +1,4 @@
 // userName = prompt("Черкани как тебя на районе кличут")
-userName = "user"
-changeName = document.querySelector("#nameUser")
+// changeName = document.querySelector("#nameUser")
 
-changeName.innerHTML = `${userName}!`
+// changeName.innerHTML = `${userName}!`
